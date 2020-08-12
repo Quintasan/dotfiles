@@ -1,7 +1,9 @@
 {
   delta = {
     enable = true;
-    options = ["--theme='Dracula'"];
+    options = {
+      theme = "Dracula";
+    };
   };
 
   aliases = {

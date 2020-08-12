@@ -5,4 +5,8 @@
     userName = "Michał Zając";
     userEmail = "michal.zajac@gmail.com";
   };
+
+  programs.mpv = lib.attrsets.recursiveUpdate (import ./programs/mpv/default-config.nix) {
+    enable = true;
+  };
 }
