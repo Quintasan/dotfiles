@@ -12,6 +12,7 @@
     master = "switch master";
     lshow = "diff-tree --no-commit-id --name-status -r";
     stash-all = "stash save --include-untracked";
+    cof = "!git for-each-ref --format='%(refname:short)' refs/heads | fzf | xargs git checkout";
   };
 
   extraConfig = {
@@ -52,7 +53,6 @@
     "*.tar"
     "*.zip"
     "*.log"
-    "*.sql"
     "*.sqlite"
     ".DS_Store"
     ".DS_Store?"
